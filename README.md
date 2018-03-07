@@ -10,5 +10,5 @@ Small command line utility for fetching weather from National Weather Service. D
 usage:  weather <slug>
 ```
 
-Where <slug> is the NWS slug for the weather location. 
+Where `<slug>` is the NWS slug for the weather location. 
 
