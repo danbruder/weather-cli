@@ -1,5 +1,4 @@
 defmodule Weather.Cli do
-  @default_count 4
   @moduledoc """
   Handle the command line parsing and the dispatch to the 
   various functions that end up generating a table of the 
@@ -7,7 +6,21 @@ defmodule Weather.Cli do
   """
 
   def run(argv) do
-    parse_args(argv)
+    argv
+    |> parse_args
+    |> process
+  end
+
+  def process(:help) do
+    IO.puts("""
+    usage:  weather <slug>
+    """)
+
+    System.halt(0)
+  end
+
+  def process(slug) do
+    Weather.NWS.fetch(slug)
   end
 
   @doc """
