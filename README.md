@@ -4,10 +4,14 @@ Small command line utility for fetching weather from National Weather Service. D
 
 ![screenshot](https://github.com/danbruder/weather-cli/raw/master/img/weather.jpg)
 
+## Installation
+
+TODO
+
 ## Usage
 
 ```
-usage:  weather <slug>
+usage:  ./weather <slug>
 ```
 
 Where `<slug>` is the NWS slug for the weather location. 
