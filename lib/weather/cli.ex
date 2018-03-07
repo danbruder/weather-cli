@@ -21,6 +21,15 @@ defmodule Weather.Cli do
 
   def process(slug) do
     Weather.NWS.fetch(slug)
+    |> decode_response
+    |> IO.puts()
+  end
+
+  def decode_response({:ok, body}), do: body
+
+  def decode_response({:error, error}) do
+    IO.puts("Error fetching from NWS: #{error}")
+    System.halt(2)
   end
 
   @doc """
