@@ -18,17 +18,19 @@ defmodule Weather.Cli do
   Denton Enterprise Airport, TX, use "KDTO"
   """
   def parse_args(argv) do
-    parse = OptionParser.parse(argv, switches: [help: :boolean], aliases: [h: :help])
+    OptionParser.parse(argv, switches: [help: :boolean], aliases: [h: :help])
+    |> args_to_internal_representation
+  end
 
-    case parse do
-      {[help: true], _, _} ->
-        :help
+  def args_to_internal_representation({[help: true], _, _}) do
+    :help
+  end
 
-      {_, [slug], _} ->
-        slug
+  def args_to_internal_representation({_, [slug], _}) do
+    slug
+  end
 
-      _ ->
-        :help
-    end
+  def args_to_internal_representation(_) do
+    :help
   end
 end
