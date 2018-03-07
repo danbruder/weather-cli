@@ -1,21 +1,14 @@
 # Weather
 
-**TODO: Add description**
+Small commandline utility for fetching weather from National Weather Service. Developed while going through [Programming Elixir 1.6](https://pragprog.com/book/elixir16/programming-elixir-1-6).
 
-## Installation
+![screenshot](https://github.com/danbruder/weather-cli/raw/master/img/weather.jpg)
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `weather` to your list of dependencies in `mix.exs`:
+## Usage
 
-```elixir
-def deps do
-  [
-    {:weather, "~> 0.1.0"}
-  ]
-end
+```
+usage:  weather <slug>
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/weather](https://hexdocs.pm/weather).
+Where <slug> is the NWS slug for the weather location. 
 
