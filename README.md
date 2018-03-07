@@ -1,4 +1,4 @@
-# Weather Cli
+# ⛅ Weather Cli
 
 Small command line utility for fetching weather from National Weather Service. Developed while going through [Programming Elixir 1.6](https://pragprog.com/book/elixir16/programming-elixir-1-6).
 
