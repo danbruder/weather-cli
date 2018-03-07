@@ -7,7 +7,7 @@ defmodule Weather.Cli do
   last _n_ issues in a github project
   """
 
-  def run(argv) do
+  def main(argv) do
     argv
     |> parse_args
     |> process

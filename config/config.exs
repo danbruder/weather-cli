@@ -3,3 +3,5 @@
 use Mix.Config
 
 config :weather, nws_url: "http://w1.weather.gov"
+
+config :logger, compile_time_purge_level: :info
