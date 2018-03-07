@@ -21,10 +21,10 @@ defmodule Weather.Cli do
     parse = OptionParser.parse(argv, switches: [help: :boolean], aliases: [h: :help])
 
     case parse do
-      {[hellp: true], _} ->
+      {[help: true], _, _} ->
         :help
 
-      {_, slug} ->
+      {_, [slug], _} ->
         slug
 
       _ ->

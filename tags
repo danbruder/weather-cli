@@ -22,7 +22,7 @@ parse	deps/earmark/src/link_text_parser.erl	/^parse(Tokens) ->$/;"	f	module:link
 parse_and_scan	deps/earmark/src/link_text_parser.erl	/^parse_and_scan({F, A}) ->$/;"	f	module:link_text_parser
 parse_and_scan	deps/earmark/src/link_text_parser.erl	/^parse_and_scan({M, F, A}) ->$/;"	f	module:link_text_parser
 return_error	deps/earmark/src/link_text_parser.erl	/^return_error(Line, Message) ->$/;"	f	module:link_text_parser
-sidebarNodes.extras	doc/dist/sidebar_items-f2331816f1.js	/^sidebarNodes={"extras":[{"id":"api-reference","title":"API Reference","group":"","headers":[{"id":"Modules","anchor":"modules"}]}],"exceptions":[],"modules":[{"id":"Weather","title":"Weather","group":"","functions":[{"id":"hello\/0","anchor":"hello\/0"}]}],"tasks":[]}/;"	p
+sidebarNodes.extras	doc/dist/sidebar_items-2c5d1ed894.js	/^sidebarNodes={"extras":[{"id":"api-reference","title":"API Reference","group":"","headers":[{"id":"Modules","anchor":"modules"}]}],"exceptions":[],"modules":[{"id":"Weather","title":"Weather","group":"","functions":[{"id":"hello\/0","anchor":"hello\/0"}]},{"id":"Weather.Cli","title":"Weather.Cli","group":"","functions":[{"id":"parse_args\/1","anchor":"parse_args\/1"},{"id":"run\/1","anchor":"run\/1"}]}],"tasks":[]}/;"	p
 skip_cont	deps/earmark/src/link_text_lexer.erl	/^skip_cont(Rest, Line, skip_token, Error) ->$/;"	f	module:link_text_lexer
 skip_cont	deps/earmark/src/link_text_lexer.erl	/^skip_cont(Rest, Line, {end_token,_T,Push}, Error) ->$/;"	f	module:link_text_lexer
 skip_cont	deps/earmark/src/link_text_lexer.erl	/^skip_cont(Rest, Line, {end_token,_T}, Error) ->$/;"	f	module:link_text_lexer
